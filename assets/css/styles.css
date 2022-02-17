@@ -333,7 +333,53 @@ textarea {
 
 .nav__recursos {
   grid-area: nav__recursos;
+  background-color: #fabd62;
+  box-shadow: 5px 5px 3px black inset,5px -5px 3px black inset ;
+  padding: 1.3rem;
 }
+
+.recursos__nav_item{
+  list-style: none;
+  padding: 1rem;
+  font-family: 'Chewy', cursive;
+  border-bottom: 2px solid#080808;
+  
+}
+
+.recursos__nav_item:hover{
+  box-shadow: 8px 0px 13px black inset;
+
+}
+
+
+
+.recursos__nav_link{
+  text-decoration: none;
+  font-size: 2rem;
+  /* color: #080808; */
+  color: #5c14ec;
+
+}
+
+.recursos_container {
+  box-shadow: 3px 3px 8px black inset;
+  padding: 1rem;
+
+}
+
+.recursos_titulo{
+  text-align: center;
+  color: #080808;
+  font-size: 2.2rem;
+  margin: 1.7rem;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Chewy', cursive;
+  font-weight: 100;
+
+}
+
+
+
 .prim_1 {
   grid-area: prim_1;
 }
@@ -392,13 +438,18 @@ textarea {
   grid-area: extras5;
 }
 
+.extras1, .extras2, .extras3, .extras4, .extras5{
+  padding: 1rem;
+  
+} 
+
+
 .extra__img {
   max-width: 30rem;
+  
 }
 
-.borde {
-  border: 1px solid black;
-}
+
 
 /* --------------------------------- */
 
