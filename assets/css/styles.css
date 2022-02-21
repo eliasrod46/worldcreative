@@ -275,7 +275,7 @@ textarea {
 }
 
 /*-----------------------------------Preguntas Frecuentes-----------------------------------*/
-.cardsContainer {
+.cardsContainer-l {
   margin-top: 14rem;
   margin-left: 20px;
   display: flex;
@@ -283,7 +283,7 @@ textarea {
   flex-wrap: wrap;
 }
 
-.card {
+.card-l {
   margin: 1rem;
   width: 25rem;
   background-color: rgba(1, 1, 1, 0.3);
