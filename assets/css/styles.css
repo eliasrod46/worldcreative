@@ -441,13 +441,33 @@ textarea {
 .extras1, .extras2, .extras3, .extras4, .extras5{
   padding: 1rem;
   
-} 
+}
+
+
 
 
 .extra__img {
-  max-width: 30rem;
+  width: 30rem;
   
 }
+
+.recursos_contenido{
+display: flex;
+
+}
+
+.recursos_contenido-img{
+  max-width: 40rem;
+  margin: 1.2rem;
+  
+}
+
+
+
+
+
+
+
 
 
 
