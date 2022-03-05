@@ -1,32 +1,43 @@
 /* -------------------- Preguntas Frecuentes -------------------- */
-.cardsContainer-l {
+
+@mixin cards($i, $primario, $secundario) {
+  .card-#{$i} {
+    margin: 1rem;
+    width: 25rem;
+    background-color: $primario;
+    border-radius: 20px;
+    overflow: auto;
+  }
+  .card-#{$i}__titulo {
+    margin: 1rem;
+    font-family: "Chewy", cursive;
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-align: center;
+    color: $secundario;
+  }
+  .card-#{$i}__texto {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+    color: $secundario;
+  }
+}
+
+.cardsContainer {
   margin-top: 14rem;
   margin-left: 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
-  .card-lo {
-    margin: 1rem;
-    width: 25rem;
-    background-color: rgba(1, 1, 1, 0.3);
-    border-radius: 20px;
-    overflow: auto;
-  }
-
-  .card__titulo {
-    margin: 1rem;
-    font-family: "Chewy", cursive;
-    font-size: 2.5rem;
-    font-weight: 100;
-    text-align: center;
-  }
-
-  .card__texto {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
-
-    text-align: center;
-    padding: 20px;
+  $i: 1;
+  @for $i from 1 through 3 {
+    @if $i%2 == 1 {
+      @include cards($i, $primario, $secundario-alt);
+    } @else {
+      @include cards($i, $secundario, $primario-alt);
+    }
   }
 }

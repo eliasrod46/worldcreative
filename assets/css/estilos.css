@@ -47,7 +47,7 @@ html {
 }
 
 .nav_container .nav__logo {
-  width: 8rem;
+  width: 6rem;
 }
 
 .nav_container .nav__list {
@@ -64,7 +64,7 @@ html {
   background-color: 7c52cf;
   padding: 1.3rem;
   margin: 1.5rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   list-style: none;
   border: 4px solid #6724f3;
   border-radius: 20px;
@@ -469,7 +469,7 @@ html {
 }
 
 /* -------------------- Preguntas Frecuentes -------------------- */
-.cardsContainer-l {
+.cardsContainer {
   margin-top: 14rem;
   margin-left: 20px;
   display: -webkit-box;
@@ -482,27 +482,79 @@ html {
       flex-wrap: wrap;
 }
 
-.cardsContainer-l .card-lo {
+.cardsContainer .card-1 {
   margin: 1rem;
   width: 25rem;
-  background-color: rgba(1, 1, 1, 0.3);
+  background-color: #5c14ec;
   border-radius: 20px;
   overflow: auto;
 }
 
-.cardsContainer-l .card__titulo {
+.cardsContainer .card-1__titulo {
   margin: 1rem;
   font-family: "Chewy", cursive;
   font-size: 2.5rem;
   font-weight: 100;
   text-align: center;
+  color: #ffd99f;
 }
 
-.cardsContainer-l .card__texto {
+.cardsContainer .card-1__texto {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   text-align: center;
   padding: 20px;
+  color: #ffd99f;
+}
+
+.cardsContainer .card-2 {
+  margin: 1rem;
+  width: 25rem;
+  background-color: #fabd62;
+  border-radius: 20px;
+  overflow: auto;
+}
+
+.cardsContainer .card-2__titulo {
+  margin: 1rem;
+  font-family: "Chewy", cursive;
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-align: center;
+  color: #7c52cf;
+}
+
+.cardsContainer .card-2__texto {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 20px;
+  color: #7c52cf;
+}
+
+.cardsContainer .card-3 {
+  margin: 1rem;
+  width: 25rem;
+  background-color: #5c14ec;
+  border-radius: 20px;
+  overflow: auto;
+}
+
+.cardsContainer .card-3__titulo {
+  margin: 1rem;
+  font-family: "Chewy", cursive;
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-align: center;
+  color: #ffd99f;
+}
+
+.cardsContainer .card-3__texto {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 20px;
+  color: #ffd99f;
 }
 
 /* -------------------- FOOTER -------------------- */
