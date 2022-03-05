@@ -1,0 +1,47 @@
+/* -------------------- FOOTER -------------------- */
+
+.footer {
+  margin-top: -3px;
+  padding: 0.8rem;
+  background-color: #5c14ec;
+
+  .footer__title {
+    font-family: "Chewy", cursive;
+    font-size: 5rem;
+    color: #080808;
+    text-align: center;
+  }
+
+  .footer__redes {
+    text-align: center;
+
+    .footer__redes--iconos {
+      margin: 0.6rem 3rem;
+      font-size: 4rem;
+      color: #939393;
+    }
+
+    .footer__redes--iconos:hover {
+      color: #fafafa;
+
+      filter: drop-shadow(0px 0px 5px #fabd62);
+    }
+  }
+
+  .footer-boton {
+    padding: 2rem;
+    margin: 0 auto;
+    font-size: 1.7rem;
+    color: #080808;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    a {
+      color: #080808;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #fafafa;
+      filter: drop-shadow(0px 0px 5px #fabd62);
+    }
+  }
+}

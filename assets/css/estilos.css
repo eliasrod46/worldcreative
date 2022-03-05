@@ -13,15 +13,13 @@ color: #7c52cf;
 color: #080808; 
 color: #9d9d9d; 
 
-
-
-/*------------------------------------------------------------------------------------*/
+*/
 /*Reset*/
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -34,13 +32,13 @@ html {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .principal .row,
 .extra .row {
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 /* -------------------- NAV GENERAL -------------------- */
@@ -57,7 +55,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .nav_container .nav__list .nav__item {
@@ -71,7 +69,7 @@ html {
   border: 4px solid #6724f3;
   border-radius: 20px;
   -webkit-box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.45);
-          box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.45);
   -webkit-transition: all 500ms;
   transition: all 500ms;
 }
@@ -83,7 +81,7 @@ html {
 
 .nav_container .nav__list .nav__item:hover {
   -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
 /* -------------------- Titulo Principal -------------------- */
@@ -133,10 +131,24 @@ html {
 .principal__recursos {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "nav__recursos prim_1 prim_1 extras1" "nav__recursos prim_2 prim_2 extras1" "nav__recursos prim_3 prim_3 prim_3" "nav__recursos prim_4 prim_4 extras2" "nav__recursos prim_5 prim_5 extras2" "nav__recursos prim_6 prim_6 prim_6" "nav__recursos matematica matematica extras3" "nav__recursos lengua lengua extras3" "nav__recursos fisica  fisica fisica" "nav__recursos geografia geografia extras4" "nav__recursos historia historia extras4" "nav__recursos basico basico basico" "nav__recursos intermedio intermedio extras5" "nav__recursos avanzado avanzado extras5";
+  grid-template-areas:
+    "nav__recursos prim_1 prim_1 extras1"
+    "nav__recursos prim_2 prim_2 extras1"
+    "nav__recursos prim_3 prim_3 prim_3"
+    "nav__recursos prim_4 prim_4 extras2"
+    "nav__recursos prim_5 prim_5 extras2"
+    "nav__recursos prim_6 prim_6 prim_6"
+    "nav__recursos matematica matematica extras3"
+    "nav__recursos lengua lengua extras3"
+    "nav__recursos fisica  fisica fisica"
+    "nav__recursos geografia geografia extras4"
+    "nav__recursos historia historia extras4"
+    "nav__recursos basico basico basico"
+    "nav__recursos intermedio intermedio extras5"
+    "nav__recursos avanzado avanzado extras5";
   /* grid-template-columns: 10% 35% 30% 25%; */
   -ms-grid-columns: 1fr 4fr 4fr 2fr;
-      grid-template-columns: 1fr 4fr 4fr 2fr;
+  grid-template-columns: 1fr 4fr 4fr 2fr;
 }
 
 .principal__recursos .nav__recursos {
@@ -146,7 +158,7 @@ html {
   grid-area: nav__recursos;
   background-color: #fabd62;
   -webkit-box-shadow: 5px 5px 3px black inset, 5px -5px 3px black inset;
-          box-shadow: 5px 5px 3px black inset, 5px -5px 3px black inset;
+  box-shadow: 5px 5px 3px black inset, 5px -5px 3px black inset;
   padding: 1.3rem;
 }
 
@@ -166,12 +178,12 @@ html {
 
 .principal__recursos .nav__recursos .recursos__nav_item:hover {
   -webkit-box-shadow: 8px 0px 13px black inset;
-          box-shadow: 8px 0px 13px black inset;
+  box-shadow: 8px 0px 13px black inset;
 }
 
 .principal__recursos .recursos_container {
   -webkit-box-shadow: 3px 3px 8px black inset;
-          box-shadow: 3px 3px 8px black inset;
+  box-shadow: 3px 3px 8px black inset;
   padding: 1rem;
 }
 
@@ -181,7 +193,10 @@ html {
   display: flex;
 }
 
-.principal__recursos .recursos_container .recursos_contenido .recursos_contenido-img {
+.principal__recursos
+  .recursos_container
+  .recursos_contenido
+  .recursos_contenido-img {
   width: 40rem;
   margin: 1.2rem;
 }
@@ -347,9 +362,29 @@ html {
 
 @media (max-width: 600px) {
   .principal__recursos {
-        grid-template-areas: "nav__recursos" "prim_1" "prim_2" "extras1" "prim_3" "prim_4" "extras2" "prim_5" "prim_6" "extras3" "matematica" "lengua" "extras4" "fisica" "geografia" "extras5" "historia" "basico" "intermedio" "avanzado";
+    grid-template-areas:
+      "nav__recursos"
+      "prim_1"
+      "prim_2"
+      "extras1"
+      "prim_3"
+      "prim_4"
+      "extras2"
+      "prim_5"
+      "prim_6"
+      "extras3"
+      "matematica"
+      "lengua"
+      "extras4"
+      "fisica"
+      "geografia"
+      "extras5"
+      "historia"
+      "basico"
+      "intermedio"
+      "avanzado";
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .prim_1,
   .prim_2,
@@ -374,7 +409,7 @@ html {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
@@ -404,16 +439,16 @@ html {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 55rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: 4px solid #6724f3;
   border-radius: 20px;
   -webkit-box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.45);
-          box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.45);
   background-color: #555;
 }
 
@@ -459,101 +494,26 @@ html {
   border-radius: 3px;
   padding: 7px 12px;
   border: 1px solid #d5d5d5;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#eee),
+    to(#ddd)
+  );
   background-image: linear-gradient(#eee, #ddd);
   font: 700 13px/18px Helvetica, arial;
 }
 
 .formContainer .form .button__enviar {
-  background: #fabd62 -webkit-gradient(linear, left top, left bottom, from(#ffb648), to(#fabd62)) repeat-x;
+  background: #fabd62 -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#ffb648),
+      to(#fabd62)
+    ) repeat-x;
   background: #fabd62 linear-gradient(#ffb648, #fabd62) repeat-x;
   border-color: #fabd62;
-}
-
-/* -------------------- Preguntas Frecuentes -------------------- */
-.cardsContainer-l {
-  margin-top: 14rem;
-  margin-left: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.cardsContainer-l .card-lo {
-  margin: 1rem;
-  width: 25rem;
-  background-color: rgba(1, 1, 1, 0.3);
-  border-radius: 20px;
-  overflow: auto;
-}
-
-.cardsContainer-l .card__titulo {
-  margin: 1rem;
-  font-family: "Chewy", cursive;
-  font-size: 2.5rem;
-  font-weight: 100;
-  text-align: center;
-}
-
-.cardsContainer-l .card__texto {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 20px;
-}
-
-/* -------------------- FOOTER -------------------- */
-.footer {
-  margin-top: -3px;
-  padding: 0.8rem;
-  background-color: #5c14ec;
-}
-
-.footer .footer__title {
-  font-family: "Chewy", cursive;
-  font-size: 5rem;
-  color: #080808;
-  text-align: center;
-}
-
-.footer .footer__redes {
-  text-align: center;
-}
-
-.footer .footer__redes .footer__redes--iconos {
-  margin: 0.6rem 3rem;
-  font-size: 4rem;
-  color: #939393;
-}
-
-.footer .footer__redes .footer__redes--iconos:hover {
-  color: #fafafa;
-  -webkit-filter: drop-shadow(0px 0px 5px #fabd62);
-          filter: drop-shadow(0px 0px 5px #fabd62);
-}
-
-.footer .footer-boton {
-  padding: 2rem;
-  margin: 0 auto;
-  font-size: 1.7rem;
-  color: #080808;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-}
-
-.footer .footer-boton a {
-  color: #080808;
-  text-decoration: none;
-}
-
-.footer .footer-boton a:hover {
-  color: #fafafa;
-  -webkit-filter: drop-shadow(0px 0px 5px #fabd62);
-          filter: drop-shadow(0px 0px 5px #fabd62);
 }
 /*# sourceMappingURL=estilos.css.map */

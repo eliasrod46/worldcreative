@@ -1,0 +1,188 @@
+/*-----------------------------------Recursos Educativos-----------------------------------*/
+
+.principal__recursos {
+  display: grid;
+  grid-template-areas:
+    "nav__recursos prim_1 prim_1 extras1"
+    "nav__recursos prim_2 prim_2 extras1"
+    "nav__recursos prim_3 prim_3 prim_3"
+    "nav__recursos prim_4 prim_4 extras2"
+    "nav__recursos prim_5 prim_5 extras2"
+    "nav__recursos prim_6 prim_6 prim_6"
+    "nav__recursos matematica matematica extras3"
+    "nav__recursos lengua lengua extras3"
+    "nav__recursos fisica  fisica fisica"
+    "nav__recursos geografia geografia extras4"
+    "nav__recursos historia historia extras4"
+    "nav__recursos basico basico basico"
+    "nav__recursos intermedio intermedio extras5"
+    "nav__recursos avanzado avanzado extras5";
+
+  /* grid-template-columns: 10% 35% 30% 25%; */
+  grid-template-columns: 1fr 4fr 4fr 2fr;
+
+  .nav__recursos {
+    grid-area: nav__recursos;
+    background-color: #fabd62;
+    box-shadow: 5px 5px 3px black inset, 5px -5px 3px black inset;
+    padding: 1.3rem;
+
+    .recursos__nav_item {
+      list-style: none;
+      padding: 1rem;
+      font-family: "Chewy", cursive;
+      border-bottom: 2px solid#080808;
+
+      .recursos__nav_link {
+        text-decoration: none;
+        font-size: 2rem;
+        /* color: #080808; */
+        color: #5c14ec;
+      }
+    }
+    .recursos__nav_item:hover {
+      box-shadow: 8px 0px 13px black inset;
+    }
+  }
+
+  .recursos_container {
+    box-shadow: 3px 3px 8px black inset;
+    padding: 1rem;
+    .recursos_contenido {
+      display: flex;
+      .recursos_contenido-img {
+        width: 40rem;
+        margin: 1.2rem;
+      }
+    }
+    .recursos_titulo {
+      text-align: center;
+      color: #080808;
+      font-size: 2.2rem;
+      margin: 1.7rem;
+      font-family: "Montserrat", sans-serif;
+      font-family: "Chewy", cursive;
+      font-weight: 100;
+    }
+  }
+
+  .prim_1 {
+    grid-area: prim_1;
+  }
+  .prim_2 {
+    grid-area: prim_2;
+  }
+  .prim_3 {
+    grid-area: prim_3;
+  }
+  .prim_4 {
+    grid-area: prim_4;
+  }
+  .prim_5 {
+    grid-area: prim_5;
+  }
+  .prim_6 {
+    grid-area: prim_6;
+  }
+  .sec_matematica {
+    grid-area: matematica;
+  }
+  .sec_lengua {
+    grid-area: lengua;
+  }
+  .sec_fisica {
+    grid-area: fisica;
+  }
+  .sec_geografia {
+    grid-area: geografia;
+  }
+  .sec_historia {
+    grid-area: historia;
+  }
+  .ing_basico {
+    grid-area: basico;
+  }
+  .ing_intermedio {
+    grid-area: intermedio;
+  }
+  .ing_avanzado {
+    grid-area: avanzado;
+  }
+  .extras1 {
+    grid-area: extras1;
+  }
+  .extras2 {
+    grid-area: extras2;
+  }
+  .extras3 {
+    grid-area: extras3;
+  }
+  .extras4 {
+    grid-area: extras4;
+  }
+  .extras5 {
+    grid-area: extras5;
+  }
+
+  .extras1,
+  .extras2,
+  .extras3,
+  .extras4,
+  .extras5 {
+    padding: 1rem;
+
+    .extra__img {
+      width: 30rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .principal__recursos {
+    grid-template-areas:
+      "nav__recursos"
+      "prim_1"
+      "prim_2"
+      "extras1"
+      "prim_3"
+      "prim_4"
+      "extras2"
+      "prim_5"
+      "prim_6"
+      "extras3"
+      "matematica"
+      "lengua"
+      "extras4"
+      "fisica"
+      "geografia"
+      "extras5"
+      "historia"
+      "basico"
+      "intermedio"
+      "avanzado";
+    grid-template-columns: 1fr;
+  }
+
+  .prim_1,
+  .prim_2,
+  .prim_3,
+  .prim_4,
+  .prim_5,
+  .prim_6,
+  .sec_matematica,
+  .sec_lengua,
+  .sec_fisica,
+  .sec_geografia,
+  .sec_historia,
+  .ing_basico,
+  .ing_intermedio,
+  .ing_avanzado,
+  .extras1,
+  .extras2,
+  .extras3,
+  .extras4,
+  .extras5 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
