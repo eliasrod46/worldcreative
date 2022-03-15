@@ -33,42 +33,25 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <div class="container">
-        <div class="nav_container">
-          <div class="row">
-            <!-- LOGO -->
-            <a href="../index.html" class="nav__link">
-              <img src="../assets/img/logo.png" alt="Logo" class="nav__logo" />
-            </a>
-            <!-- NAV BAR -->
-            <nav>
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="../index.html">Inicio</a>
-                </li>
-
-                <li class="nav__item">
-                  <a class="nav__link" href="recursos.html"
-                    >Recursos Educativos</a
-                  >
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="nosotros.html">Sobre Nosotros</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="contacto.html">Contactanos</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="frecuentes.html"
-                    >Preguntas Frecuentes</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
+    <header class="main-header">
+      <a href="../index.html">
+        <img src="../assets/img/logo.png" alt="Logo" class="main-logo"/>
+      </a>
+      <!-- NAV BAR -->
+      <nav id="nav" class="main-nav">
+        <div class="nav-links">
+          <a class="link-item" href="../index.html">Inicio</a>
+          <a class="link-item" href="recursos.html">Recursos Educativos</a>
+          <a class="link-item" href="nosotros.html">Sobre Nosotros</a>
+          <a class="link-item" href="contacto.html">Contactanos</a>
+          <a class="link-item" href="frecuentes.html">Preguntas Frecuentes</a>
         </div>
-      </div>
+      </nav>
+      <button id="button-menu" class="button-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
     <!-- WAVES ENTRADA -->
     <div class="waves">
@@ -92,18 +75,8 @@
           </div>
           <div class="text_container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              perferendis suscipit harum magnam velit, veritatis in. Vitae,
-              distinctio veritatis. Iure labore at incidunt magni quia
-              necessitatibus adipisci voluptatem, sunt dolorem amet, suscipit
-              delectus dolorum ipsum deserunt accusamus nam a ipsa. Adipisci
-              itaque obcaecati, illo cupiditate inventore, quod eligendi qui
-              facere nam suscipit dolorum sed quos magnam? Autem praesentium
-              quas esse, rerum rem voluptate officia accusantium! Consequuntur
-              ratione animi quasi autem iste quam eius provident et mollitia,
-              sed officiis. Ullam tempora veritatis expedita quaerat, illo
-              dignissimos ipsa voluptatum vero alias sit voluptatem doloremque,
-              quas suscipit culpa animi modi minima, quisquam non!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error accusantium beatae ducimus neque repudiandae rem magnam accusamus animi delectus ipsa iste voluptatibus perspiciatis veniam minima, architecto dignissimos quidem culpa hic provident quaerat aliquam cumque. Voluptate cumque impedit alias rem voluptatem libero dicta autem, nihil, nesciunt vel debitis accusantium corporis voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Error accusantium beatae ducimus neque cumque impedit alias rem voluptatem libero dicta autem, nihil, nesciunt vel debitis accusantium corporis voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Error accusantium beatae ducimus neque repudiandae rem magnam accusamus animi delectus ipsa iste voluptatibus perspiciatis veniam minima, architecto dignissimos quidem culpa hic provident quaerat aliquam cumque. Voluptate cumque impedit alias rem voluptatem libero dicta autem, nihil, nesciunt vel debitis accusantium corporis voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              
             </p>
           </div>
         </div>
@@ -138,5 +111,7 @@
         </div>
       </div>
     </footer>
+    <script src="../assets/js/nav.js"></script>
+
   </body>
 </html>

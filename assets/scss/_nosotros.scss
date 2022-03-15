@@ -1,13 +1,23 @@
 /*-----------------------------------nosotros-----------------------------------*/
 
 .img_container {
-  width: 35rem;
-  /* width: 30%; */
+  text-align: center;
 }
+.img_container img{
+  width: 20rem;
+}
+
 .text_container {
   /* max-width: 115rem; */
   width: 70%;
 
   font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 821px){
+
+  .img_container img{
+    width: 40rem;
+  }
 }

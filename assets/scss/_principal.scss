@@ -1,4 +1,7 @@
 /* -------------------- Titulo Principal -------------------- */
+
+
+
 .principal__titulo {
   font-family: "Chewy", cursive;
   text-align: center;
@@ -11,4 +14,12 @@
 
 .principal__titulo:hover {
   text-shadow: -4px -4px 2px#333;
+}
+
+
+@media screen and (max-width: 412px){
+
+  .principal__titulo {
+    font-size: 4rem;
+  }
 }
