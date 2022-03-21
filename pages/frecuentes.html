@@ -34,42 +34,25 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <div class="container">
-        <div class="nav_container">
-          <div class="row">
-            <!-- LOGO -->
-            <a href="../index.html" class="nav__link">
-              <img src="../assets/img/logo.png" alt="Logo" class="nav__logo" />
-            </a>
-            <!-- NAV BAR -->
-            <nav>
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="../index.html">Inicio</a>
-                </li>
-
-                <li class="nav__item">
-                  <a class="nav__link" href="recursos.html"
-                    >Recursos Educativos</a
-                  >
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="nosotros.html">Sobre Nosotros</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="contacto.html">Contactanos</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="frecuentes.html"
-                    >Preguntas Frecuentes</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
+    <header class="main-header">
+      <a href="../index.html">
+        <img src="../assets/img/logo.png" alt="Logo" class="main-logo" />
+      </a>
+      <!-- NAV BAR -->
+      <nav id="nav" class="main-nav">
+        <div class="nav-links">
+          <a class="link-item" href="../index.html">Inicio</a>
+          <a class="link-item" href="recursos.html">Recursos Educativos</a>
+          <a class="link-item" href="nosotros.html">Sobre Nosotros</a>
+          <a class="link-item" href="contacto.html">Contactanos</a>
+          <a class="link-item" href="frecuentes.html">Preguntas Frecuentes</a>
         </div>
-      </div>
+      </nav>
+      <button id="button-menu" class="button-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
     <!-- WAVES ENTRADA -->
     <div class="waves">
@@ -85,37 +68,45 @@
       <h1 class="principal__titulo">Preguntas Frecuentes</h1>
 
       <section class="principal">
-        <div class="cardsContainer row">
-          <div class="card-1">
-            <h2 class="card-1__titulo">Pregunta 1</h2>
-            <p class="card-1__texto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nulla
-              harum quam dolores aperiam facere adipisci itaque, sapiente
-              officiis, exercitationem blanditiis commodi praesentium vel natus
-              similique recusandae, ducimus temporibus! Sit provident magni
-              officiis earum possimus voluptas totam veniam soluta id!
-            </p>
-          </div>
+        <div class="row">
+          <div class="col">
+            <div class="tabs">
+              <div class="tab">
+                <input class="input__frecuentes" type="checkbox" id="chck1" />
+                <label class="tab-label" for="chck1">Pregunta 1</label>
+                <div class="tab-content">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum, reiciendis!
+                </div>
+              </div>
 
-          <div class="card-2">
-            <h2 class="card-2__titulo">Pregunta 1</h2>
-            <p class="card-2__texto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nulla
-              harum quam dolores aperiam facere adipisci itaque, sapiente
-              officiis, exercitationem blanditiis commodi praesentium vel natus
-              similique recusandae, ducimus temporibus! Sit provident magni
-              officiis earum possimus voluptas totam veniam soluta id!
-            </p>
-          </div>
-          <div class="card-3">
-            <h2 class="card-3__titulo">Pregunta 1</h2>
-            <p class="card-3__texto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nulla
-              harum quam dolores aperiam facere adipisci itaque, sapiente
-              officiis, exercitationem blanditiis commodi praesentium vel natus
-              similique recusandae, ducimus temporibus! Sit provident magni
-              officiis earum possimus voluptas totam veniam soluta id!
-            </p>
+              <div class="tab">
+                <input class="input__frecuentes" type="checkbox" id="chck2" />
+                <label class="tab-label" for="chck2">Pregunta 2</label>
+                <div class="tab-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  in!
+                </div>
+              </div>
+
+              <div class="tab">
+                <input class="input__frecuentes" type="checkbox" id="chck3" />
+                <label class="tab-label" for="chck3">Pregunta 3</label>
+                <div class="tab-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  in!
+                </div>
+              </div>
+
+              <div class="tab">
+                <input class="input__frecuentes" type="checkbox" id="chck4" />
+                <label class="tab-label" for="chck4">Pregunta 4</label>
+                <div class="tab-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  in!
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -150,5 +141,6 @@
         </div>
       </div>
     </footer>
+    <script src="../assets/js/nav.js"></script>
   </body>
 </html>

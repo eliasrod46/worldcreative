@@ -1,7 +1,5 @@
 /* -------------------- Titulo Principal -------------------- */
 
-
-
 .principal__titulo {
   font-family: "Chewy", cursive;
   text-align: center;
@@ -16,9 +14,7 @@
   text-shadow: -4px -4px 2px#333;
 }
 
-
-@media screen and (max-width: 412px){
-
+@media screen and (max-width: 820px) {
   .principal__titulo {
     font-size: 4rem;
   }
