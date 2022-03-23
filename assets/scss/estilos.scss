@@ -14,14 +14,13 @@ color: #080808;
 color: #9d9d9d; 
 
 */
-@import "vars";
-@import "navBurger";
-@import "base";
-@import "nav";
-@import "principal";
-@import "index";
+@import "vars"; /*OK*/
+@import "navBurger"; /*OK*/
+@import "base"; /*OK*/
+@import "principal"; /*OK*/
+@import "index"; /*OK*/
 @import "recursos";
-@import "nosotros";
-@import "contacto";
-@import "frecuentes";
+@import "nosotros"; /*OK*/
+@import "contacto"; /*OK*/
+@import "frecuentes"; /*OK*/
 @import "footer"; /*OK*/

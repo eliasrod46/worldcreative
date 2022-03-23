@@ -1,10 +1,10 @@
 {
   "name": "world-creative",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pagina Web de Centro de apoyo escolar",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass --watch assets/scss/estilos.scss assets/css/estilos.css"
+    "sass": "sass --watch assets/scss/estilos.scss assets/css/estilos.css"
   },
   "repository": {
     "type": "git",

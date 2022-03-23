@@ -1,3 +1,4 @@
+<div class="cierra">
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -12,6 +13,11 @@
       href="../assets/img/favicon.png"
       type="image/x-icon"
     />
+    <!-- Animate css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!--Font Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,42 +39,25 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <div class="container">
-        <div class="nav_container">
-          <div class="row">
-            <!-- LOGO -->
-            <a href="../index.html" class="nav__link">
-              <img src="../assets/img/logo.png" alt="Logo" class="nav__logo" />
-            </a>
-            <!-- NAV BAR -->
-            <nav>
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="../index.html">Inicio</a>
-                </li>
-
-                <li class="nav__item">
-                  <a class="nav__link" href="recursos.html"
-                    >Recursos Educativos</a
-                  >
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="nosotros.html">Sobre Nosotros</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="contacto.html">Contactanos</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="frecuentes.html"
-                    >Preguntas Frecuentes</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
+    <header class="main-header">
+      <a href="../index.html">
+        <img src="../assets/img/logo.png" alt="Logo" class="main-logo" />
+      </a>
+      <!-- NAV BAR -->
+      <nav id="nav" class="main-nav">
+        <div class="nav-links">
+          <a class="link-item" href="../index.html">Inicio</a>
+          <a class="link-item" href="recursos.html">Recursos Educativos</a>
+          <a class="link-item" href="nosotros.html">Sobre Nosotros</a>
+          <a class="link-item" href="contacto.html">Contactanos</a>
+          <a class="link-item" href="frecuentes.html">Preguntas Frecuentes</a>
         </div>
-      </div>
+      </nav>
+      <button id="button-menu" class="button-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
     <!-- WAVES ENTRADA -->
     <div class="waves">
@@ -80,16 +69,18 @@
         ></path>
       </svg>
     </div>
-    <h1 class="principal__titulo">Recursos Educativos</h1>
+    <h1 class="principal__titulo" id="nav-recursos">Recursos Educativos</h1>
+</div>
     <main>
       <section class="principal__recursos">
+        <!-- bara de navegacion de recursos-->
         <div class="nav__recursos">
           <ul class="recursos__nav_list">
             <li class="recursos__nav_item">
               <a class="recursos__nav_link" href="#prim-1">1er Grado</a>
             </li>
             <li class="recursos__nav_item">
-              <a class="recursos__nav_link" href="#prim-2">1do Grado</a>
+              <a class="recursos__nav_link" href="#prim-2">2do Grado</a>
             </li>
             <li class="recursos__nav_item">
               <a class="recursos__nav_link" href="#prim-3">3er Grado</a>
@@ -104,9 +95,7 @@
               <a class="recursos__nav_link" href="#prim-6">6to Grado</a>
             </li>
             <li class="recursos__nav_item">
-              <a class="recursos__nav_link" href="#sec-matematica"
-                >Matematica</a
-              >
+              <a class="recursos__nav_link" href="#sec-matematica">Matematica</a>
             </li>
             <li class="recursos__nav_item">
               <a class="recursos__nav_link" href="#sec-lengua">Lengua</a>
@@ -124,118 +113,332 @@
               <a class="recursos__nav_link" href="#ing-basico">Basico</a>
             </li>
             <li class="recursos__nav_item">
-              <a class="recursos__nav_link" href="#ing-intermedio"
-                >Intermedio</a
-              >
+              <a class="recursos__nav_link" href="#ing-intermedio">Intermedio</a>
             </li>
             <li class="recursos__nav_item">
               <a class="recursos__nav_link" href="#ing-avanzado">Avanzado</a>
             </li>
           </ul>
         </div>
-        <div class="prim_1 recursos_container" id="prim-1">
-          <h2 class="recursos_titulo">Recursos de 1er Grado</h2>
-          <div class="recursos_contenido">
-            <img
-              class="recursos_contenido-img"
-              src="../assets/img/recursos/tablas de multiplicar/Tabla del 1.png"
-              alt="tabla del 1"
-            />
-            <img
-              class="recursos_contenido-img"
-              src="../assets/img/recursos/tablas de multiplicar/Tabla del 2.png"
-              alt="tabla del 2"
-            />
+
+        <!-- Contendo de recursos educactivos -->
+          <!-- Recursos Primaria -->
+          <div class="prim_1 recursos_container" id="prim-1">
+            <h2 class="recursos_titulo">Recursos de 1er Grado</h2>
+            <div class="recursos_contenido">
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 1.png"
+                alt="tabla del 1"
+              />
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 2.png"
+                alt="tabla del 2"
+              />
+            </div>
+            <p class="recursos_contenido-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex quasi ratione quod nobis earum corrupti aperiam commodi provident ut accusantium iste explicabo perspiciatis iure aliquid enim molestias? Voluptates, modi eligendi. Asperiores tempora atque veniam? Illo debitis corrupti accusantium saepe.</p>
+            <div class="to__nav">
+              <a href="#nav-recursos" class="to__nav--boton"><ion-icon name="arrow-up-outline"></ion-icon></a>
+            </div>
           </div>
-        </div>
-        <div class="prim_2 recursos_container" id="prim-2">
-          <h2 class="recursos_titulo">Recursos de 2do Grado</h2>
-          <div class="recursos_contenido">
-            <img
-              class="recursos_contenido-img"
-              src="../assets/img/recursos/tablas de multiplicar/Tabla del 3.png"
-              alt="tabla del 3"
-            />
-            <img
-              class="recursos_contenido-img"
-              src="../assets/img/recursos/tablas de multiplicar/Tabla del 4.png"
-              alt="tabla del 4"
-            />
+          <div class="prim_2 recursos_container" id="prim-2">
+            <h2 class="recursos_titulo">Recursos de 2do Grado</h2>
+            <div class="recursos_contenido">
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 1.png"
+                alt="tabla del 1"
+              />
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 2.png"
+                alt="tabla del 2"
+              />
+            </div>
+              <p class="recursos_contenido-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex quasi ratione quod nobis earum corrupti aperiam commodi provident ut accusantium iste explicabo perspiciatis iure aliquid enim molestias? Voluptates, modi eligendi. Asperiores tempora atque veniam? Illo debitis corrupti accusantium saepe.</p>
+            <div class="to__nav">
+              <a href="#nav-recursos" class="to__nav--boton"><ion-icon name="arrow-up-outline"></ion-icon></a>
+            </div>
           </div>
-        </div>
-        <div class="prim_3 recursos_container" id="prim-3">
-          <h2 class="recursos_titulo">Recursos de 3er Grado</h2>
-        </div>
-        <div class="prim_4 recursos_container" id="prim-4">
-          <h2 class="recursos_titulo">Recursos de 4to Grado</h2>
-        </div>
-        <div class="prim_5 recursos_container" id="prim-5">
-          <h2 class="recursos_titulo">Recursos de 5to Grado</h2>
-        </div>
-        <div class="prim_6 recursos_container" id="prim-6">
-          <h2 class="recursos_titulo">Recursos de 6to Grado</h2>
-        </div>
-        <div class="sec_matematica recursos_container" id="sec-matematica">
-          <h2 class="recursos_titulo">Recursos de Matematica</h2>
-        </div>
-        <div class="sec_lengua recursos_container" id="sec-lengua">
-          <h2 class="recursos_titulo">Recursos de Lengua</h2>
-        </div>
-        <div class="sec_fisica recursos_container" id="sec-fisica">
-          <h2 class="recursos_titulo">Recursos de Fisica</h2>
-        </div>
-        <div class="sec_geografia recursos_container" id="sec-geografia">
-          <h2 class="recursos_titulo">Recursos de Geografia</h2>
-        </div>
-        <div class="sec_historia recursos_container" id="sec-historia">
-          <h2 class="recursos_titulo">Recursos de Historia</h2>
-        </div>
-        <div class="ing_basico recursos_container" id="ing-basico">
-          <h2 class="recursos_titulo">Recursos de Ingles Basico</h2>
-        </div>
-        <div class="ing_intermedio recursos_container" id="ing-intermedio">
-          <h2 class="recursos_titulo">Recursos de Ingles Intermedio</h2>
-        </div>
-        <div class="ing_avanzado recursos_container" id="ing-avanzado">
-          <h2 class="recursos_titulo">Recursos de Ingles Avanzado</h2>
-        </div>
-        <div class="extras1 recursos_container">
-          <img
-            class="extra__img"
-            src="../assets/img/extras/extras1.png"
-            alt=""
-          />
-        </div>
-        <div class="extras2 recursos_container">
-          <img
-            class="extra__img"
-            src="../assets/img/extras/extras2.png"
-            alt=""
-          />
-        </div>
-        <div class="extras3 recursos_container">
-          <img
-            class="extra__img"
-            src="../assets/img/extras/extras3.png"
-            alt=""
-          />
-        </div>
-        <div class="extras4 recursos_container">
-          <img
-            class="extra__img"
-            src="../assets/img/extras/extras4.png"
-            alt=""
-          />
-        </div>
-        <div class="extras5 recursos_container">
-          <img
-            class="extra__img"
-            src="../assets/img/extras/extras5.png"
-            alt=""
-          />
-        </div>
+          <div class="prim_3 recursos_container" id="prim-3">
+            <h2 class="recursos_titulo">Recursos de 3er Grado</h2>
+            <div class="recursos_contenido">
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 1.png"
+                alt="tabla del 1"
+              />
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 2.png"
+                alt="tabla del 2"
+              />
+            </div>
+              <p class="recursos_contenido-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex quasi ratione quod nobis earum corrupti aperiam commodi provident ut accusantium iste explicabo perspiciatis iure aliquid enim molestias? Voluptates, modi eligendi. Asperiores tempora atque veniam? Illo debitis corrupti accusantium saepe.</p>
+            <div class="to__nav">
+              <a href="#nav-recursos" class="to__nav--boton"><ion-icon name="arrow-up-outline"></ion-icon></a>
+            </div>
+          </div>
+          <div class="extras1 recursos_container">
+            <div class="extra_contenido">
+              <img
+                class="extra__img"
+                src="../assets/img/extras/extras1.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="prim_4 recursos_container" id="prim-4">
+            <h2 class="recursos_titulo">Recursos de 4to Grado</h2>
+            <div class="recursos_contenido">
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 1.png"
+                alt="tabla del 1"
+              />
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 2.png"
+                alt="tabla del 2"
+              />
+            </div>
+              <p class="recursos_contenido-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex quasi ratione quod nobis earum corrupti aperiam commodi provident ut accusantium iste explicabo perspiciatis iure aliquid enim molestias? Voluptates, modi eligendi. Asperiores tempora atque veniam? Illo debitis corrupti accusantium saepe.</p>
+            <div class="to__nav">
+              <a href="#nav-recursos" class="to__nav--boton"><ion-icon name="arrow-up-outline"></ion-icon></a>
+            </div>
+          </div>
+          <div class="prim_5 recursos_container" id="prim-5">
+            <h2 class="recursos_titulo">Recursos de 5to Grado</h2>
+            <div class="recursos_contenido">
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 1.png"
+                alt="tabla del 1"
+              />
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 2.png"
+                alt="tabla del 2"
+              />
+            </div>
+              <p class="recursos_contenido-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex quasi ratione quod nobis earum corrupti aperiam commodi provident ut accusantium iste explicabo perspiciatis iure aliquid enim molestias? Voluptates, modi eligendi. Asperiores tempora atque veniam? Illo debitis corrupti accusantium saepe.</p>
+            <div class="to__nav">
+              <a href="#nav-recursos" class="to__nav--boton"><ion-icon name="arrow-up-outline"></ion-icon></a>
+            </div>
+          </div>
+          <div class="prim_6 recursos_container" id="prim-6">
+            <h2 class="recursos_titulo">Recursos de 6to Grado</h2>
+            <div class="recursos_contenido">
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 1.png"
+                alt="tabla del 1"
+              />
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 2.png"
+                alt="tabla del 2"
+              />
+            </div>
+              <p class="recursos_contenido-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex quasi ratione quod nobis earum corrupti aperiam commodi provident ut accusantium iste explicabo perspiciatis iure aliquid enim molestias? Voluptates, modi eligendi. Asperiores tempora atque veniam? Illo debitis corrupti accusantium saepe.</p>
+            <div class="to__nav">
+              <a href="#nav-recursos" class="to__nav--boton"><ion-icon name="arrow-up-outline"></ion-icon></a>
+            </div>
+          </div>
+          <div class="extras2 recursos_container">
+            <div class="extra_contenido">
+              <img
+              class="extra__img"
+              src="../assets/img/extras/extras2.png"
+              alt=""
+              />
+            </div>
+          </div>
+          <!-- Recursos Secundaria -->
+          <div class="sec_matematica recursos_container" id="sec-matematica">
+            <h2 class="recursos_titulo">Recursos de Matematica</h2>
+            <div class="recursos_contenido">
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 1.png"
+                alt="tabla del 1"
+              />
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 2.png"
+                alt="tabla del 2"
+              />
+            </div>
+              <p class="recursos_contenido-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex quasi ratione quod nobis earum corrupti aperiam commodi provident ut accusantium iste explicabo perspiciatis iure aliquid enim molestias? Voluptates, modi eligendi. Asperiores tempora atque veniam? Illo debitis corrupti accusantium saepe.</p>
+            <div class="to__nav">
+              <a href="#nav-recursos" class="to__nav--boton"><ion-icon name="arrow-up-outline"></ion-icon></a>
+            </div>
+          </div>
+          <div class="sec_lengua recursos_container" id="sec-lengua">
+            <h2 class="recursos_titulo">Recursos de Lengua</h2>
+            <div class="recursos_contenido">
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 1.png"
+                alt="tabla del 1"
+              />
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 2.png"
+                alt="tabla del 2"
+              />
+            </div>
+              <p class="recursos_contenido-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex quasi ratione quod nobis earum corrupti aperiam commodi provident ut accusantium iste explicabo perspiciatis iure aliquid enim molestias? Voluptates, modi eligendi. Asperiores tempora atque veniam? Illo debitis corrupti accusantium saepe.</p>
+            <div class="to__nav">
+              <a href="#nav-recursos" class="to__nav--boton"><ion-icon name="arrow-up-outline"></ion-icon></a>
+            </div>
+          </div>
+          <div class="sec_fisica recursos_container" id="sec-fisica">
+            <h2 class="recursos_titulo">Recursos de Fisica</h2>
+            <div class="recursos_contenido">
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 1.png"
+                alt="tabla del 1"
+              />
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 2.png"
+                alt="tabla del 2"
+              />
+            </div>
+              <p class="recursos_contenido-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex quasi ratione quod nobis earum corrupti aperiam commodi provident ut accusantium iste explicabo perspiciatis iure aliquid enim molestias? Voluptates, modi eligendi. Asperiores tempora atque veniam? Illo debitis corrupti accusantium saepe.</p>
+            <div class="to__nav">
+              <a href="#nav-recursos" class="to__nav--boton"><ion-icon name="arrow-up-outline"></ion-icon></a>
+            </div>
+          </div>
+          <div class="extras3 recursos_container">
+            <div class="extra_contenido">
+              <img
+              class="extra__img"
+              src="../assets/img/extras/extras3.png"
+              alt=""
+              />
+            </div>
+          </div>
+          <div class="sec_geografia recursos_container" id="sec-geografia">
+            <h2 class="recursos_titulo">Recursos de Geografia</h2>
+            <div class="recursos_contenido">
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 1.png"
+                alt="tabla del 1"
+              />
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 2.png"
+                alt="tabla del 2"
+              />
+            </div>
+              <p class="recursos_contenido-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex quasi ratione quod nobis earum corrupti aperiam commodi provident ut accusantium iste explicabo perspiciatis iure aliquid enim molestias? Voluptates, modi eligendi. Asperiores tempora atque veniam? Illo debitis corrupti accusantium saepe.</p>
+            <div class="to__nav">
+              <a href="#nav-recursos" class="to__nav--boton"><ion-icon name="arrow-up-outline"></ion-icon></a>
+            </div>
+          </div>
+          <div class="sec_historia recursos_container" id="sec-historia">
+            <h2 class="recursos_titulo">Recursos de Historia</h2>
+            <div class="recursos_contenido">
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 1.png"
+                alt="tabla del 1"
+              />
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 2.png"
+                alt="tabla del 2"
+              />
+            </div>
+              <p class="recursos_contenido-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex quasi ratione quod nobis earum corrupti aperiam commodi provident ut accusantium iste explicabo perspiciatis iure aliquid enim molestias? Voluptates, modi eligendi. Asperiores tempora atque veniam? Illo debitis corrupti accusantium saepe.</p>
+            <div class="to__nav">
+              <a href="#nav-recursos" class="to__nav--boton"><ion-icon name="arrow-up-outline"></ion-icon></a>
+            </div>
+          </div>
+          <div class="extras4 recursos_container">
+            <div class="extra_contenido">
+            <img
+              class="extra__img"
+              src="../assets/img/extras/extras4.png"
+              alt=""
+            />
+            </div>
+          </div>
+          <!-- Recursos Ingles -->
+          <div class="ing_basico recursos_container" id="ing-basico">
+            <h2 class="recursos_titulo">Recursos de Ingles Basico</h2>
+            <div class="recursos_contenido">
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 1.png"
+                alt="tabla del 1"
+              />
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 2.png"
+                alt="tabla del 2"
+              />
+            </div>
+              <p class="recursos_contenido-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex quasi ratione quod nobis earum corrupti aperiam commodi provident ut accusantium iste explicabo perspiciatis iure aliquid enim molestias? Voluptates, modi eligendi. Asperiores tempora atque veniam? Illo debitis corrupti accusantium saepe.</p>
+            <div class="to__nav">
+              <a href="#nav-recursos" class="to__nav--boton"><ion-icon name="arrow-up-outline"></ion-icon></a>
+            </div>
+          </div>
+          <div class="ing_intermedio recursos_container" id="ing-intermedio">
+            <h2 class="recursos_titulo">Recursos de Ingles Intermedio</h2>
+            <div class="recursos_contenido">
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 1.png"
+                alt="tabla del 1"
+              />
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 2.png"
+                alt="tabla del 2"
+              />
+            </div>
+              <p class="recursos_contenido-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex quasi ratione quod nobis earum corrupti aperiam commodi provident ut accusantium iste explicabo perspiciatis iure aliquid enim molestias? Voluptates, modi eligendi. Asperiores tempora atque veniam? Illo debitis corrupti accusantium saepe.</p>
+            <div class="to__nav">
+              <a href="#nav-recursos" class="to__nav--boton"><ion-icon name="arrow-up-outline"></ion-icon></a>
+            </div>
+          </div>
+          <div class="ing_avanzado recursos_container" id="ing-avanzado">
+            <h2 class="recursos_titulo">Recursos de Ingles Avanzado</h2>
+            <div class="recursos_contenido">
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 1.png"
+                alt="tabla del 1"
+              />
+              <img
+                class="recursos_contenido-img"
+                src="../assets/img/recursos/tablas de multiplicar/Tabla del 2.png"
+                alt="tabla del 2"
+              />
+            </div>
+              <p class="recursos_contenido-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ex quasi ratione quod nobis earum corrupti aperiam commodi provident ut accusantium iste explicabo perspiciatis iure aliquid enim molestias? Voluptates, modi eligendi. Asperiores tempora atque veniam? Illo debitis corrupti accusantium saepe.</p>
+            <div class="to__nav">
+              <a href="#nav-recursos" class="to__nav--boton"><ion-icon name="arrow-up-outline"></ion-icon></a>
+            </div>
+          </div>
+          <div class="extras5 recursos_container">
+            <div class="extra_contenido">
+            <img
+              class="extra__img"
+              src="../assets/img/extras/extras5.png"
+              alt=""
+            />
+            </div>
+          </div>
       </section>
     </main>
+    <div class="cierra">
     <!-- WAVES CIERRE -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
@@ -265,5 +468,9 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../assets/js/nav.js"></script>
   </body>
 </html>
+</div>
