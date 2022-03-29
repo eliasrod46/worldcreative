@@ -60,7 +60,6 @@
     .to__nav--boton {
       color: #fabd62;
     }
-
     .extra_contenido {
       overflow: auto;
       text-align: center;
@@ -70,34 +69,12 @@
       }
     }
   }
+  
 }
 
 //pantallas grandes
 @media (min-width: 821px) {
   .principal__recursos {
-    .recursos_container {
-      .recursos_contenido {
-        display: flex;
-        justify-content: space-around;
-        .recursos_contenido-img {
-          width: 60rem;
-          margin: 1.2rem;
-        }
-      }
-      .recursos_contenido-text {
-        font-size: 20px;
-      }
-      .extra_contenido {
-        overflow: auto;
-        text-align: center;
-        display: flex;
-
-        .extra__img {
-          width: 35rem;
-          margin: 1.2rem;
-        }
-      }
-    }
     display: grid;
     grid-template-areas:
       "nav__recursos prim_1 prim_1 extras1"
@@ -116,6 +93,40 @@
       "nav__recursos avanzado avanzado extras5";
 
     grid-template-columns: 1fr 4fr 4fr 2fr;
+
+    .recursos_container {
+      .recursos_contenido {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .recursos_contenido-img {
+          width: 60rem;
+          margin: 1.2rem;
+        }
+      }
+      .recursos_contenido-text {
+        font-size: 20px;
+      }
+      .extra_contenido {
+        overflow: auto;
+        
+
+        .extra__img {
+        overflow: auto;
+          
+        }
+      }
+    }
+
+    
+    .extra_contenido{
+      display: flex;
+      height: 100%;
+      .extra__img{
+        align-self:center;
+      }
+    }
+    
 
     .nav__recursos {
       grid-area: nav__recursos;

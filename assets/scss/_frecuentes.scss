@@ -10,9 +10,6 @@
 .row .col {
   flex: 1;
 }
-// .row .col:last-child {
-//   margin-left: 1em;
-// }
 
 /* Accordion styles */
 .tabs {
@@ -24,6 +21,7 @@
 .tab {
   width: 100%;
   color: #fabd62;
+  font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
   margin: 0 auto;
   width: 98%;
@@ -60,7 +58,7 @@
   display: flex;
   justify-content: flex-end;
   padding: 1em;
-  font-size: 0.75em;
+  font-size: 0.75rem;
   background: #2c3e50;
   cursor: pointer;
 }

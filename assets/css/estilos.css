@@ -199,7 +199,7 @@ html {
 }
 .index__desc .index__desc--img-profe {
   margin-top: 5rem;
-  width: 20rem;
+  width: 25rem;
 }
 .index__desc .index__desc--texto {
   width: 85%;
@@ -291,6 +291,7 @@ html {
   .principal__recursos .recursos_container .recursos_contenido {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
   .principal__recursos .recursos_container .recursos_contenido .recursos_contenido-img {
     width: 60rem;
@@ -301,12 +302,16 @@ html {
   }
   .principal__recursos .recursos_container .extra_contenido {
     overflow: auto;
-    text-align: center;
-    display: flex;
   }
   .principal__recursos .recursos_container .extra_contenido .extra__img {
-    width: 35rem;
-    margin: 1.2rem;
+    overflow: auto;
+  }
+  .principal__recursos .extra_contenido {
+    display: flex;
+    height: 100%;
+  }
+  .principal__recursos .extra_contenido .extra__img {
+    align-self: center;
   }
   .principal__recursos .nav__recursos {
     grid-area: nav__recursos;
@@ -481,6 +486,7 @@ html {
 .tab {
   width: 100%;
   color: #fabd62;
+  font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
   margin: 0 auto;
   width: 98%;
@@ -522,7 +528,7 @@ html {
   display: flex;
   justify-content: flex-end;
   padding: 1em;
-  font-size: 0.75em;
+  font-size: 0.75rem;
   background: #2c3e50;
   cursor: pointer;
 }
