@@ -3,7 +3,7 @@
 .img_container {
   text-align: center;
 }
-.img_container img{
+.img_container img {
   width: 20rem;
 }
 
@@ -12,12 +12,11 @@
   width: 70%;
 
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
-@media screen and (min-width: 821px){
-
-  .img_container img{
+@media screen and (min-width: 821px) {
+  .img_container img {
     width: 40rem;
   }
 }
